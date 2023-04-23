@@ -1,0 +1,11 @@
+#!/usr/bin/env sh
+
+yarn format
+yarn type-check
+yarn lint:fix
+yarn pre-commit
+
+. "$(dirname -- "$0")/_/husky.sh"
+
+npx commitlint --edit $1
+npx --no -- commitlint --edit ${1}

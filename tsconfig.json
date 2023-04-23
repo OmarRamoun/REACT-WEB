@@ -1,0 +1,57 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "lib": [
+      "DOM",
+      "DOM.Iterable",
+      "ESNext"
+    ],
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "removeComments": true,
+    "typeRoots": [
+      "./node_modules/@types",
+      "./src/@types",
+      "./src/assets/build"
+    ],
+    "baseUrl": "./src",
+    "paths": {
+      "@assets/*": ["assets/*"],
+      "@components": ["components/index.ts"],
+      "@constants": ["constants/index.ts"],
+      "@data": ["data/index.ts"],
+      "@hooks": ["hooks/index.ts"],
+      "@interfaces": ["interfaces/index.ts"],
+      "@layouts": ["layouts/index.ts"],
+      "@pages": ["pages/index.ts"],
+      "@shared": ["shared/index.ts"],
+      "@styles": ["styles/index.ts"],
+      "@utils": ["utils/index.ts"],
+    },
+    "incremental": true,
+    "jsx": "react-jsx",
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "allowJs": false,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "resolveJsonModule": true,
+    "rootDir": "./src",
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "strict": true
+  },
+  "include": [
+    "src/",
+  ],
+  "exclude": [
+    "node_modules",
+    "**/__mocks__*",
+    "**/__tests__*",
+    "**/*.spec.*",
+  ]
+}

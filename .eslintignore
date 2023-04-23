@@ -1,0 +1,6 @@
+lint-staged.config.js
+postcss.config.js
+rollup.config.js
+vite.config.ts
+babel.config.js
+commitlint.config.js
